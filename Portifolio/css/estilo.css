@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Backgroubds*/
+body,html,#capa{
+    height: 100%;
+}
+
+
+body{
+    background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-attachment: fixed;
+}
+/*----CONF GERAIS*/
+h1{
+   font-size: 5em;
+   font-weight: bold;
+}
+h2{
+    color: white;
+    font-size: 3em;
+}
+input,textarea{
+    margin-top:15px;
+}
+img{
+    margin-bottom: 10px;
+}
+.bord{
+    border-left: 2px solid rgba(0,0,0,0.6);
+}
+nav i{
+    animation: none;
+}
+i{
+    color: white;
+    animation: pisca .9s infinite;
+}
+.seta{
+    margin-top: 150px;
+}
+.separador{
+    padding-bottom: 65px;
+}
+/*Barra de navegação*/
+/*bg barra de navegação*/
+nav.navbar-transparente{
+    background:rgba(0,0,0,0.6); 
+	padding: 15px 15px;
+}
+nav a{
+    font-size: 1.2em;
+}
+/*Logo*/
+#cabecalho h2{
+    color: white;
+    font-size: 1.5em;
+}
+/*CAPA*/
+#capa h2::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+/*SOBRE*/
+#sobre{
+    background-color: rgba(255,0,0,0.3);
+    padding: 20px;
+    
+}
+.text-campos h1{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+
+.text-campos p{
+    color:black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+#localFoto{
+    width: 220px;
+    height: 235px;
+    border-radius: 50%;
+    background-color: blue;
+    margin:auto;
+}
+/*Sobre*/
+#sobre h1{
+    color: black;
+}
+/*SERVIÇOS*/
+#servicos{
+    background-color: rgba(255,255,255,.5);
+  
+}
+
+/*PROJETOS*/
+#projetos{
+    background-color: rgba(255,0,0,0.4);
+    padding: 20px;
+}
+
+/*CONTATOS*/
+#contatos{
+    background-color: rgba(255,255,255,.5);
+    padding: 20px;
+}
+#borda{
+    margin:auto;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+#contatos i{
+    animation: none;
+}
+#contatos a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+@keyframes pisca{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+/*Media*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  /*CONF GERAIS*/
+ 
+  h1{
+    font-size: 2em;
+    font-weight: bold;
+ }
+ h2{
+     color: white;
+     font-size: 2em;
+ }
+ #sobre p{
+    color:black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: inherit;
+ 
+}
+#borda p{
+    font-size: 1em;
+}
+#servicos p{
+    font-size: 1em;
+}
+.bord{
+    border:none;
+}
+.bordB{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    margin-bottom: 10px;
+}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ /*CONF GERAIS*/
+ h1{
+    font-size: 2em;
+    font-weight: bold;
+ }
+ h2{
+     color: white;
+     font-size: 2em;
+ }
+ }
+	
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #sobre,#servicos,#projetos{
+        height: 100%;
+ 
+    }
+ }

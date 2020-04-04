@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- HTML5Shiv -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+    <title>RafaelSilva</title>
+    
+  </head>
+  <body onload="digitar(texto)">
+    
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-md navbar-transparente navbar-dark fixed-top ">
+            <div class="container">
+                <a href="" class="navbar-brand"><!--ICONE-->
+                    <h2>Rafael<span class="text-danger">Silva</span></h2>
+                </a><!--FIM ICONE-->
+
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#nav1">
+                <i class="fas fa-bars text-white"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                      <a href="" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#sobre" class="nav-link" onclick="fechar()">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#projetos"  class="nav-link" onclick="fechar()">Projetos</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a href="#servicos" class="nav-link" onclick="fechar()">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contatos" class="nav-link" onclick="fechar()">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+           </div>
+          </nav>
+    </header>
+
+    <section id="capa" class="d-flex"><!--capa-->
+        <div class="container align-self-center">
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <h1 class="text-danger">Desenvolvedor web</h1>
+                    <h1 class="text-danger">Freelancer</h1>
+                    <h1 class="text-danger">Programador PHP</h1>
+                    <h2 id="texto">Bem vindo ao meu portifolio!</h2>
+                </div>
+                
+        </div>
+    </section><!--FIm capa-->
+
+    <section id="sobre"><!--Sobre min-->
+        <div class="container text-campos text-center pt-5">
+            <h1>Sobre mim</h1>
+            <p class="text-light">Meu Nome é Rafael, eu tenho 21 anos, e estou no ultimo ano de "Sistema de informação".Me especializo em desenvolvimento de sites, pois é o que eu gosto!
+                    <br/>Estou começando a caminhar nesse grande mundo da programação, com a intenção de conhecer as grandes tecnologias do mercado, entre elas, algumas eu ja domino,como: Html, CSS, Bootstrap, JavaScript, NodeJs e PHP. Estou preparado e disposto a novos desafios!
+            </p>
+            <div>
+                <img  id="localFoto" src="../img/eu.jpeg" class="img-fluid">
+            </div>
+            
+        </div>
+        
+    </section><!--Fim sobre min-->
+
+    <section id="servicos" ><!--Serviços-->
+        <div class="container text-campos " >
+            <h1 class="text-danger">Serviços</h1>
+            <div class="row mt-5">
+                <div class="col-md-4 text-center bordB">
+                    <img src="../img/icon1.png">
+                    <p>Desenvolvedor de sites, especialista em Html, CSS, JavaScript e PHP.</p>
+                </div>
+                <div class="col-md-4 text-center bord bordB">
+                    <img src="../img/icon2.png">
+                        <p>Front-end, especialista em criação de designer responsivo, utilizando CSS e Bootstrap.</p>
+                        
+                    </div>
+                <div class="col-md-4 text-center bord bordB">
+                        <img src="../img/icon3.png">
+                        <p>Back-end, especialista em PHP7, NodeJs e Mysql.</p>
+                </div>
+            </div>
+            <div class="row mt-5 ">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4 text-center bordB">
+                    <img src="../img/webshop.png">
+                    <p>Criação de Loja online, venda seus produtos, ou receba pagamento atraves do seu site.</p>
+                </div>
+                
+                <div class="col-md-4 text-center bord bordB">
+                    <img src="../img/icon4.png">
+                    <p>Suporte técnico, fazemos manutenção, restaure seu site. </p>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </section><!--Fim serviços-->
+
+    <section id="projetos"><!--Projetos-->
+        <div class="container text-campos text-center">
+            <h1>Projetos</h1>
+            <p id="texto2">Ainda não tenho projetos disponiveis para apresentação. :/ Breve tera projetos para visualização.</p>
+        </div>
+        <div class="container">
+        </div>
+        
+    </section><!--Fim projetos-->
+
+    <section id="contatos"><!--Contatos-->
+        <div class="container text-campos" >
+            <h1 class="text-danger">Contatos</h1>
+            <p>Ainda tem dúvidas ou quer fazer um orçamento? mande uma mensagem!</p>
+            <div class="row">
+                <div class="col-md-5 ">
+                    <input type="text" class="form-control " placeholder="Nome:" id="nome">
+                <input type="mail" class="form-control " placeholder="Email:" id="email">
+                <textarea class="form-control " placeholder="Digite sua mensagen..." id="mensagem"></textarea>
+                <button class="btn btn-success m-3" onclick="capturaDados()">Enviar</button>
+                </div>
+                <div class="col-md-6 text-center" id="borda">
+                    <p class="text-justify m-3">Email: marrafisaled@gmail.com</p>
+                    <p class="text-justify m-3">Telefone:(11)98674-3416</p>
+                      <a href="https://api.whatsapp.com/send?phone=5511983743416&text=Ol%C3%A1!%20Queria%20saber%20mais%20sobre%20seu%20trabalho!" class="text-dark m-2"><i class="fab fa-whatsapp fa-3x text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-mariano-b785a11a4/" class="text-dark m-2"> <i class="fab fa-linkedin fa-2x text-dark"></i></a>
+                    
+                   
+                    
+                    
+                    
+                </div>
+            </div>
+            <!--Modal de Registro-->
+			      <div class="modal" tabindex="-1" role="dialog" id="modalRegistro">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-success" id="titulo_modal"></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          <div class="modal-body" id="conteudo">
+                            </div>
+                          <div class="modal-footer">
+                            <button type="button"  data-dismiss="modal" id="btnAcao"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section><!--Fim Contatos-->
+
+    <footer class="bg-dark"><!--Rodapé-->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright:
+            <a href="https://www.linkedin.com/in/rafael-mariano-b785a11a4/" target="_blank"> Rafael Silva(In)</a>
+        </div>
+        <!-- Copyright -->
+    </footer><!--Fim rodapé-->
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="../js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js" ></script>
+  </body>
+</html>
